@@ -3,30 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Contato | João Vitor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-mode">
   <nav class="navbar">
     <div class="container">
       <a class="logo" href="index.html">João Vitor</a>
       <ul class="nav">
-        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
         <li><a href="projetos.html">Projetos</a></li>
         <li><a href="contato.html" class="active">Contato</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container">
-    <h1>Entre em Contato</h1>
-    <p>Me envie uma mensagem diretamente para <strong>jv.prado98@gmail.com</strong>.</p>
+  <main class="container hero-section fade-in">
+    <h1>Fale Comigo</h1>
+    <p>Quer trocar uma ideia, discutir projetos ou apenas me dar um oi? Aqui estão minhas formas de contato:</p>
 
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea placeholder="Sua mensagem" rows="5" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <ul class="contact-list">
+      <li><strong>Email:</strong> <a href="mailto:jv.prado98@gmail.com">jv.prado98@gmail.com</a></li>
+      <li><strong>Telefone:</strong> <a href="tel:+5598984147530">(98) 98414-7530</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/joao-do-prado" target="_blank">linkedin.com/in/joao-do-prado</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/joaodoprado" target="_blank">github.com/joaodoprado</a></li>
+    </ul>
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector('.fade-in').classList.add('show');
+    });
+  </script>
 </body>
 </html>

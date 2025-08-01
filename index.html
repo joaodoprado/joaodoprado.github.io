@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-mode">
   <nav class="navbar">
     <div class="container">
       <a class="logo" href="index.html">João Vitor</a>
@@ -18,12 +18,18 @@
     </div>
   </nav>
 
-  <main class="hero-section container">
+  <main class="hero-section container fade-in">
     <h1>Olá, meu nome é João Vitor</h1>
     <p class="lead">
       Sou desenvolvedor web com foco em back-end, especializado em Symfony 6 e integração de soluções digitais com bancos de dados e mapas geoespaciais. Tenho experiência prática no desenvolvimento de sistemas internos e ferramentas de apoio à engenharia, com ênfase em performance, clareza e eficiência.
     </p>
     <a href="projetos.html" class="btn">Veja meus projetos</a>
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector('.fade-in').classList.add('show');
+    });
+  </script>
 </body>
 </html>

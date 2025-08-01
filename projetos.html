@@ -3,32 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Projetos | João Vitor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-mode">
   <nav class="navbar">
     <div class="container">
       <a class="logo" href="index.html">João Vitor</a>
       <ul class="nav">
-        <li><a href="sobre.html">Sobre Mim</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
         <li><a href="projetos.html" class="active">Projetos</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </div>
   </nav>
 
-  <main class="container">
-    <h1>Projetos</h1>
+  <main class="container hero-section fade-in">
+    <h1>Projetos em Destaque</h1>
 
     <div class="card">
       <h2>Sistema de Iluminação Pública</h2>
-      <p>Plataforma com importação de arquivos KML e shapefile, exibição em mapas OpenLayers, e análise espacial com MySQL.</p>
+      <p>Plataforma web com importação de arquivos KML e Shapefile, visualização em mapas interativos (OpenLayers), e análise espacial com MySQL. Inclui funcionalidades de marcação automática de relações entre entidades como postes, trechos e lâmpadas.</p>
     </div>
 
     <div class="card">
       <h2>Dashboard de Projetos</h2>
-      <p>Integração com Google Sheets e SISGB para acompanhamento de obras, KPIs e relatórios interativos.</p>
+      <p>Sistema de controle de obras com visualização de progresso integrado ao Google Sheets. Permite gestão visual de status de projetos, KPIs e exportação de relatórios personalizados para o cliente.</p>
+    </div>
+
+    <div class="card">
+      <h2>Módulo de Análise Espacial (IP)</h2>
+      <p>Mecanismo para gerar automaticamente áreas sem lâmpadas baseado em dados de postes e trechos secundários. Gera polígonos inteligentes e exporta para visualização direta no mapa, com persistência no banco.</p>
     </div>
   </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector('.fade-in').classList.add('show');
+    });
+  </script>
 </body>
 </html>
