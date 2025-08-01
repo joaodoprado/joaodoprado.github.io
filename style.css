@@ -146,3 +146,41 @@ form button:hover {
     font-size: 1.5rem;
   }
 }
+
+.hero-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+
+.hero-section h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.hero-section .lead {
+  max-width: 750px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
