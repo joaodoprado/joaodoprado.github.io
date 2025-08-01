@@ -5,6 +5,39 @@
   <title>Contato | João Vitor</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .section p, .section ul {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .contact-list {
+      list-style: none;
+      padding-left: 0;
+      text-align: left;
+      margin: 2rem 0;
+    }
+    .contact-list li::before {
+      content: "\2022";
+      color: #00bfff;
+      font-weight: bold;
+      display: inline-block;
+      width: 1rem;
+      margin-left: -1rem;
+    }
+    .contact-list li {
+      margin-bottom: 1rem;
+    }
+    .contact-list a {
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+    .contact-list a:hover {
+      color: #fff;
+      text-shadow: 0 0 6px #00bfff;
+    }
+  </style>
 </head>
 <body class="dark-mode">
   <nav class="navbar">
@@ -18,7 +51,7 @@
     </div>
   </nav>
 
-  <main class="container hero-section fade-in">
+  <main class="container hero-section fade-in section">
     <h1>Fale Comigo</h1>
     <p>Quer trocar uma ideia, discutir projetos ou apenas me dar um oi? Aqui estão minhas formas de contato:</p>
 

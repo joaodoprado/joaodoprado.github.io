@@ -91,6 +91,7 @@ body {
   color: #ccc;
 }
 
+/* Botões */
 .btn {
   display: inline-block;
   background-color: #00bfff;
@@ -104,6 +105,54 @@ body {
 
 .btn:hover {
   background-color: #009bd6;
+}
+
+/* Seção genérica para alinhamento */
+.section p, .section ul {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/* Cartões de conteúdo */
+.card {
+  background-color: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+  color: #00bfff;
+}
+
+/* Lista de contatos */
+.contact-list {
+  list-style: none;
+  padding: 1.5rem 0 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.contact-list li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: #ccc;
+}
+
+.contact-list a {
+  color: #00bfff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.contact-list a:hover {
+  color: #fff;
+  text-shadow: 0 0 6px #00bfff;
 }
 
 /* Responsivo */
